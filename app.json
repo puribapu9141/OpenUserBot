@@ -1,7 +1,7 @@
 {
   "name": "Telegram Open User Bot",
   "description": "[OpenUserBot] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
-  "logo": "https://telegra.ph/file/d04a1724c6dd8a957bd0e.png",
+  "logo": "https://telegra.ph/file/6efe7d3e61b77bf18baf8.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/puribapu9141/OpenUserBot",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "https://t.me/PPE_Support",
+  "success_url": "https://t.me/PM_Alt2",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -191,7 +191,7 @@
     },
     "UB_BLACK_LIST_CHAT": {
       "description": "haha",
-      "value": "-1001376711460 -1001232530981 -1001460242671 -1001255383765 -1001476589953 -1001298140471 -1001089118458 -1001224245343 -1001287976326 -1001377256951 -1001329042156 -1001202504432 -1001148103952 -1001063463715 -1001455478060 -1001251236870 -1001462536556 -1001120290128 -1001485556805 -1001220993104 -1001109500936 -1001305313195 -1001329980174",
+      "value": "0",
       "required": false
     },
     "LYDIA_API_KEY": {
