@@ -9,7 +9,7 @@ from telethon import events
 from userbot.events import register 
 from userbot import CMD_HELP, bot
 
-gif_to_sticker = bot.gif_to_sticker or {}
+gif_to_sticker = gif_to_sticker or {}
 access_hashes = bot.access_hashes or {}
 gif_to_sticker = {str(gif): int(sticker) for sticker, gif in gif_to_sticker.items()}
 
