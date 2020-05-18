@@ -34,9 +34,9 @@ For discussion, bug reporting, and help, you can join [OpenUserBot Support Group
 ## Credits
 
 Thanks for all : 
-* [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
+* [Balaji Mestro (RaphielGang)](https://github.com/RaphielGang) - Telegram-Paperplane
 * [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
-* [Mkaraniya](https://github.com/mkaraniya) - OpenUserBot
+* [Mayur_Karaniya](https://github.com/mkaraniya) - OpenUserBot
 * [DevPatel](https://github.com/Devp73) - OpenUserBot - Fixing
 * [PratikGoswamiPM](https://github.com/puribapu9141) - OpenUserBot - Added Some Memes
 
