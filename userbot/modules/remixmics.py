@@ -9,7 +9,7 @@ import asyncio
 import zipfile
 import time
 import html
-import patoolib
+
 import shutil
 import subprocess
 from io import BytesIO
