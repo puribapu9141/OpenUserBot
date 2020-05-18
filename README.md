@@ -44,4 +44,4 @@ and many more people who aren't mentioned here, but may be found in [Contributor
 
 ## License
 
-This userbot licensed on [Raphielscape Public License](https://github.com/puribapu9141/OpenUserBot/blob/sql-extended/LICENSE) - Version 1.d, February 2020
+This userbot licensed on [Raphielscape Public License](https://github.com/puribapu9141/OpenUserBot/blob/sql-extended/LICENSE) - Version 1.d, F 2020
