@@ -35,7 +35,7 @@ async def follow(follow):
     await follow.edit(
                      f"`FOLLOW {DEFAULTUSER} ON` \n\n"
                      f"[InstaGram](https://www.instagram.com/pm_the_angry) \n\n"
-                     f"[FaceBook](https://www.facebook.com/mkaraniya) \n\n"
+                     f"[FaceBook](https://www.facebook.com/pratikgoswami9141) \n\n"
                      f"[Telegram](https://t.me/PM_The_Angry) "
                      )    
 
