@@ -13,7 +13,7 @@ import html
 import shutil
 import subprocess
 from io import BytesIO
-from PyPDF2 import PdfFileWriter, PdfFileReader
+
 from telethon import *
 from userbot.events import register 
 from pySmartDL import SmartDL
