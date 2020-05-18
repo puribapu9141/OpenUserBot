@@ -9,13 +9,13 @@ from telethon import events
 from userbot.events import register 
 from userbot import CMD_HELP, bot
 
-sticker_to_gif = bot.sticker_to_gif or {}
+gif_to_sticker = bot.gif_to_sticker or {}
 access_hashes = bot.access_hashes or {}
-gif_to_sticker = {str(gif): int(sticker) for sticker, gif in sticker_to_gif.items()}
+gif_to_sticker = {str(gif): int(sticker) for sticker, gif in gif_to_sticker.items()}
 
 
 async def convert_sticker_to_gif(sticker):
-    gif_id = sticker_to_gif.get(str(sticker.id), None)
+    gif_id = gif_to_sticker.get(str(sticker.id), None)
     if gif_id:
         access_hash = access_hashes[str(gif_id)]
         return types.InputDocument(gif_id, access_hash, b'')
