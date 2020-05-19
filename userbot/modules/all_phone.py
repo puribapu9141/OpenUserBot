@@ -437,7 +437,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     chat = "@android_helper_bot"
-    crDroid = f"crdroid"
+    crdroid = f"crdroid"
     await event.edit("```Processing```")
     async with bot.conversation("@android_helper_bot") as conv:
           try:
