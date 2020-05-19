@@ -111,26 +111,6 @@ async def _(event):
              await event.delete()
              await bot.forward_messages(event.chat_id, response.message)
 
-@register(outgoing=True, pattern="^.aicp(?: |$)(.*)")
-async def _(event):
-    if event.fwd_from:
-        return
-    link = event.pattern_match.group(1)
-    chat = "@android_helper_bot"
-    aicp = f"aicp"
-    await event.edit("```Processing```")
-    async with bot.conversation("@android_helper_bot") as conv:
-          try:
-              response = conv.wait_event(events.NewMessage(incoming=True,from_users=995271804))
-              await conv.send_message(f'/{aicp} {link}')
-              response = await response
-          except YouBlockedUserError:
-              await event.reply("```Unblock @android_helper_bot plox```")
-              return
-          else:
-             await event.delete()
-             await bot.forward_messages(event.chat_id, response.message)
-
 @register(outgoing=True, pattern="^.reapk(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
