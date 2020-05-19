@@ -1,4 +1,6 @@
 #created by @eve_enryu
+#bug fixed by @PM_Alt2
+#don't nuke my credit please ðŸ˜“
 
 import datetime
 from telethon import events
@@ -26,29 +28,7 @@ async def _(event):
           else:
              await event.delete()
              await bot.forward_messages(event.chat_id, response.message)
-                
-                
-@register(outgoing=True, pattern="^.eu(?: |$)(.*)")
-async def _(event):
-    if event.fwd_from:
-        return
-    link = event.pattern_match.group(1)
-    chat = "@XiaomiGeeksBot"
-    mieu = f"eu"
-    await event.edit("```Processing```")
-    async with bot.conversation("@XiaomiGeeksBot") as conv:
-          try:
-              response = conv.wait_event(events.NewMessage(incoming=True,from_users=774181428))
-              await conv.send_message(f'/{mieu} {link}')
-              response = await response
-          except YouBlockedUserError:
-              await event.reply("```Unblock @xiaomiGeeksBot plox```")
-              return
-          else:
-             await event.delete()
-             await bot.forward_messages(event.chat_id, response.message)
-                
-                
+             
 @register(outgoing=True, pattern="^.fastboot(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -187,7 +167,7 @@ async def _(event):
     async with bot.conversation("@XiaomiGeeksBot") as conv:
           try:
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=774181428))
-              await conv.send_message(f'/{eu} {link}')
+              await conv.send_message(f'/{vendor} {link}')
               response = await response
           except YouBlockedUserError:
               await event.reply("```Unblock @XiaomiGeeksBot plox```")
@@ -195,27 +175,6 @@ async def _(event):
           else:
              await event.delete()
              await bot.forward_messages(event.chat_id, response.message)      
-             
-             
-@register(outgoing=True, pattern="^.firmware(?: |$)(.*)")
-async def _(event):
-    if event.fwd_from:
-        return
-    link = event.pattern_match.group(1)
-    chat = "@XiaomiGeeksBot"
-    ofox = f"firmware"
-    await event.edit("```Processing```")
-    async with bot.conversation("@XiaomiGeeksBot") as conv:
-          try:
-              response = conv.wait_event(events.NewMessage(incoming=True,from_users=774181428))
-              await conv.send_message(f'/{eu} {link}')
-              response = await response
-          except YouBlockedUserError:
-              await event.reply("```Unblock @XiaomiGeeksBot plox```")
-              return
-          else:
-             await event.delete()
-             await bot.forward_messages(event.chat_id, response.message)   
              
 CMD_HELP.update({
 "xiaomi":
