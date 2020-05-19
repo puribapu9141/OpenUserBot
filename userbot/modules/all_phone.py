@@ -713,3 +713,63 @@ async def _(event):
              await event.delete()
              await bot.forward_messages(event.chat_id, response.message)
 
+@register(outgoing=True, pattern="^.gapps(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    link = event.pattern_match.group(1)
+    chat = "@android_helper_bot"
+    gapps = f"gapps"
+    await event.edit("```Processing```")
+    async with bot.conversation("@android_helper_bot") as conv:
+          try:
+              response = conv.wait_event(events.NewMessage(incoming=True,from_users=995271804))
+              await conv.send_message(f'/{gapps} {link}')
+              response = await response
+          except YouBlockedUserError:
+              await event.reply("```Unblock @android_helper_bot plox```")
+              return
+          else:
+             await event.delete()
+             await bot.forward_messages(event.chat_id, response.message)
+
+@register(outgoing=True, pattern="^.gcam(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    link = event.pattern_match.group(1)
+    chat = "@android_helper_bot"
+    gcam = f"gcam"
+    await event.edit("```Processing```")
+    async with bot.conversation("@android_helper_bot") as conv:
+          try:
+              response = conv.wait_event(events.NewMessage(incoming=True,from_users=995271804))
+              await conv.send_message(f'/{gcam} {link}')
+              response = await response
+          except YouBlockedUserError:
+              await event.reply("```Unblock @android_helper_bot plox```")
+              return
+          else:
+             await event.delete()
+             await bot.forward_messages(event.chat_id, response.message)
+
+@register(outgoing=True, pattern="^.repos(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    link = event.pattern_match.group(1)
+    chat = "@android_helper_bot"
+    repos = f"repos"
+    await event.edit("```Processing```")
+    async with bot.conversation("@android_helper_bot") as conv:
+          try:
+              response = conv.wait_event(events.NewMessage(incoming=True,from_users=995271804))
+              await conv.send_message(f'/{repos} {link}')
+              response = await response
+          except YouBlockedUserError:
+              await event.reply("```Unblock @android_helper_bot plox```")
+              return
+          else:
+             await event.delete()
+             await bot.forward_messages(event.chat_id, response.message)
+
