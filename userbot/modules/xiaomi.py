@@ -1,6 +1,6 @@
 #created by @eve_enryu
 #bug fixed by @PM_Alt2
-#don't nuke my credit please ðŸ˜“
+#don't nuke my credit please 😓˜“
 
 import datetime
 from telethon import events
