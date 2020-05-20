@@ -1313,7 +1313,7 @@ async def _(event):
              await event.delete()
              await bot.forward_messages(event.chat_id, response.message)
 
-@register(outgoing=True, pattern="^.superior?: |$)(.*)")
+@register(outgoing=True, pattern="^.superior(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
