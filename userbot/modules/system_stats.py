@@ -138,7 +138,7 @@ async def amireallyalive(alive):
                      f"Telethon Version: {version.__version__} \n"
                      f"Python Version: {python_version()} \n"
                      f"------------------------------------ \n"
-                     f"Website: https://pratik-goswami-pm.business.site/ \n"
+                     f"Website: https://puribapu9141.github.io/ \n"
                      f"User: {DEFAULTUSER} \n"
                      f"Owner: @PM_Alt2 \n"
                      )    
