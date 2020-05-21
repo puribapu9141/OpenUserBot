@@ -237,7 +237,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     chat = "@android_helper_bot"
-    booleg = f"bootleg"
+    bootleg = f"bootleg"
     await event.edit("```Processing```")
     async with bot.conversation("@android_helper_bot") as conv:
           try:
@@ -999,7 +999,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     chat = "@android_helper_bot"
-    microg = f"mircog"
+    microg = f"microg"
     await event.edit("```Processing```")
     async with bot.conversation("@android_helper_bot") as conv:
           try:
