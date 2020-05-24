@@ -18,8 +18,8 @@ DEVICES_DATA = 'https://raw.githubusercontent.com/androidtrackers/' \
                'certified-android-devices/master/devices.json'
 
 
-@register(outgoing=True, pattern="^.magisk$")
-async def magisk(request):
+@register(outgoing=True, pattern="^.root")
+async def root:
     """ magisk latest releases """
     magisk_dict = {
         "Stable":
@@ -189,7 +189,7 @@ async def twrp(request):
 
 CMD_HELP.update({
     "android":
-    ".magisk\
+    ".\
 \nGet latest Magisk releases\
 \n\n.device <codename>\
 \nUsage: Get info about android device codename or model.\
