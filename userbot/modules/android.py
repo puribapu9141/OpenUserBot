@@ -19,7 +19,7 @@ DEVICES_DATA = 'https://raw.githubusercontent.com/androidtrackers/' \
 
 
 @register(outgoing=True, pattern="^.root")
-async def root:
+async def root(request):
     """ magisk latest releases """
     magisk_dict = {
         "Stable":
