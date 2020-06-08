@@ -39,7 +39,7 @@ async def follow(follow):
                      f"[Messenger](https://m.me/pratikgoswami9141) \n\n"
                      f"[GitHub](https://github.com/puribapu9141) \n\n"
                      f"[Facebook](https://www.facebook.com/pratikgoswami9141) \n\n"
-                     f"[Twitter](https://twitter.com/PM_The_Angry) "
+                     f"[Twitter](https://twitter.com/PM_The_Angry) \n\n"
                      f"[LinkedIn](https://www.linkedin.com/in/pratik-goswami-pm-94122415b) \n\n"
                      )    
 
