@@ -178,6 +178,10 @@ MONGOCLIENT = MongoClient(MONGO_URI, 27017, serverSelectionTimeoutMS=1)
 MONGO = MONGOCLIENT.userbot
 
 
+# bit.ly module
+BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
+
+
 def is_mongo_alive():
     try:
         MONGOCLIENT.server_info()
