@@ -34,6 +34,7 @@ pylast
 pySmartDL
 python-barcode
 python-dotenv
+bitlyshortener
 pytz
 qrcode
 requests>=2.18.4
